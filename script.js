@@ -7,11 +7,14 @@ players[0].lastElementChild.setAttribute("src",s1);
 const s2 = "./images/dice"+p2+".png";
 players[1].lastElementChild.setAttribute("src",s2);
 
+
 if(p1 > p2){
+    document.querySelectorAll("link")[2].setAttribute("href",s1);
     document.getElementsByTagName("h1")[0].textContent="Player 1 wins !";
 }
 else if(p2 > p1)
 {
+    document.querySelectorAll("link")[2].setAttribute("href",s2);
     document.getElementsByTagName("h1")[0].textContent="Player 2 wins !";
 }
 else{
